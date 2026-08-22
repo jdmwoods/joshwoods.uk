@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joshua Woods | Architectural and Graphic Designer</title>
+  <meta name="description" content="I am an architectural, graphic and new media designer based in Liverpool. This is a showcase of my recently completed creative works.">
+  <meta name="author" content="Joshua Woods">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/maps.css">
+  <link rel="apple-touch-icon" href="../img/apple-icon-touch.png">
+  <link rel="shortcut icon" href="../img/favicon.png">
+</head>
+
+<body>
+
+<section id="top" style="height: 50px;"></section>
+
+<div class="header">
+<a href="../"><svg version="1.1" class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 31.8 18.3" style="enable-background:new 0 0 31.8 18.3;" xml:space="preserve">
+      <rect x="6.9" y="0.9" class="st0" width="16.5" height="16.5"/>
+      <path class="st1" d="M9.9,0.9h3v10.5c0,3.3-2.7,6-6,6s-6-2.7-6-6"/>
+      <polyline class="st1" points="27.9,0.9 30.9,0.9 30.9,16.8 23.4,9.3 15.9,16.8 15.9,0.9 18.9,0.9 	"/>
+      <rect x="6.9" y="0.9" class="st2" width="16.5" height="16.5"/>
+    </svg></a>
+      <nav class="hamburger">
+        <ul class="drop-down closed">
+          <li>
+            <div class="nav-button navTrigger">
+              <i></i><i></i><i></i>
+            </div>
+          </li>
+          <li class="filter" data-filter="all" style="margin-top: 70px;"><a href="../">ALL PROJECTS</a></li>
+          <li class="filter" data-filter=".online"><a href="../#online">NEW MEDIA</a></li>
+					<li class="filter" data-filter=".architect"><a href="../#architect">ARCHITECTURE</a>
+					</li>
+					<li class="filter" data-filter=".identity"><a href="../#identity">IDENTITY</a>
+					</li>
+					<li class="filter" data-filter=".print"><a href="../#print">PRINT</a>
+					</li>
+                    <li><a href="../about/">ABOUT</a>
+					</li>
+          <li><a href="../contact/" style="font-weight: 500; color: #626774;">CONTACT</a></li>
+        </ul>
+      </nav>
+</div>
+
+    <div id="whiteout" class="showverlay"></div>
+    
+<div class="wrapper">
+  <div class="title">
+    <div class="titleline"></div>
+    <div style="font-weight: 500; color: #626774; margin-top: 20px;">JOSHUA WOODS</div>
+    <div style="color: #999999;">Architectural and Graphic Designer</div>
+  </div>
+</div>
+
+	<div class="container wrapper subtitle">
+
+		<div id="subtitlecontact" style="color: #999999; margin-bottom: 25px;">
+			<h3 style="margin-top: 0;">
+                Whether you're interested in working with me or just want a conversation about what I may be able to do for you, simply contact me via the form on this page.
+            </h3>
+
+        </div>
+        
+        <div id="contactform">
+            
+            <form class="form" id="contact-form">
+                    <input name="name" type="text" class="feedback-input" placeholder="Name" id="name" required/>
+                
+                <p class="email">
+                    <input name="email" type="text" class="feedback-input" id="email" placeholder="Email" required/>
+                </p>
+                <p class="text">
+                    <textarea name="message" class="feedback-input" id="message" placeholder="Message" required></textarea>
+                </p>  
+                <p>
+                    <input type="submit" value="SEND" id="button-blue"/>
+                </p>
+            </form>
+
+        </div>
+        <div id="thankyouBlock" class="success">
+               <h3>Thank you for your message. I will endeavour to respond as soon as possible.</h3>
+        </div>
+        
+        <!-- Hidden message to show if contact is successful. -->
+        <div id="submit-success" class="success">
+            <h3>Message received! I'll be in touch.
+        </div>
+
+        <!-- Hidden message to show if user encounters errors. -->
+        <div id="submit-errors" class="success">
+            <h3>It looks like there was an error submitting the form.</h3>
+            <h3>Please try again later.</h3>
+        </div>
+            
+    </div>
+    
+    <div class="wrapper" style="margin-bottom: 35px;">
+
+		<section id="cd-google-map">
+			<div id="google-container"></div>
+			<div id="cd-zoom-in"></div>
+			<div id="cd-zoom-out"></div>
+		</section>
+
+	</div>
+
+
+
+
+
+<div class="footer">
+  <div class="container wrapper">
+    <div class="item location">
+      Liverpool
+      <br>Merseyside
+      <br>United Kingdom
+    </div>
+    <div class="item location">
+      <a href="https://www.facebook.com/joshdmw">Facebook</a>
+      <br><a href="https://twitter.com/jdmwoods">Twitter</a>
+      <br><a href="../contact/index.html">Email</a>
+    </div>
+    <div class="copyright">
+      &copy; 2017 Joshua Woods
+    </div>
+    <div class="top">
+      <a href="#top">&#8679;</a>
+    </div>
+  </div>
+</div>
+    
+<script src='../js/jquery-2.1.4.min.js'></script>
+<script src="../js/hamburger.js"></script>
+<script src="../js/dropdown.js"></script>
+<script src="../js/sticky.js"></script>
+<script src="../js/modernizr.custom.js"></script>
+<script src="../js/top.js"></script>
+<script src="../js/maps.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK-NUTe6y459evIW5k7ZxNauH32cdwoO0"></script>
+<script src="../js/jquery.validate.min.js"></script>
+
+<script>
+
+$("#contactform").validate({
+  submitHandler: function(form) {
+    $.ajax({
+      url: "http://formspree.io/jdmwoods@gmail.com", 
+      method: "POST",
+      data: {
+        name: $(form).find("input[name='name']").val(),
+        _replyto: $(form).find("input[name='email']").val(),
+        message: $(form).find("textarea[name='message']").val()
+      },
+      dataType: "json",
+      success: function() {
+        $("#submit-success").fadeIn();
+        $("#contactform").fadeOut();
+      },
+      error: function() {
+        $("#submit-errors").fadeIn();        
+      }
+    });
+  }
+});
+    
+</script>
+</body>
+</html>
