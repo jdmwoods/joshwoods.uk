@@ -204,12 +204,10 @@ table th {
 }
 
 .logo {
-    width: 60px;
-    height: 34px;
-    position: absolute;
-    margin-bottom: 20px;
-    margin-top: 25px;
-    margin-left: -22px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 25px;
+    margin-top: 15px;
     float: left;
     z-index: 99;
     cursor: pointer;
@@ -282,8 +280,9 @@ table th {
 
 .titleline {
     background-color: #626774;
-    width: 35px;
+    width: 50px;
     height: 3px;
+	margin-top: 5px;
     border-radius: 2px;
 }
 
@@ -917,9 +916,8 @@ input:focus, textarea:focus {
 }
 
 .logofooter {
-	width: 30px;
 	position: absolute;
-	margin-left: -6px;
+	margin-left: 0px;
 	margin-top: 3px;
         float: left;
 }
