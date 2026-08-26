@@ -263,6 +263,8 @@ table th {
 
 .header {
   z-index: 99;
+  background: #ffffff;
+  background: linear-gradient(0deg,rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 1) 100%);
   left: 0;
   right: 0;
   margin-left: auto;
