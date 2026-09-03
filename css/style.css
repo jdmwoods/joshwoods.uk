@@ -212,54 +212,23 @@ table th {
     z-index: 99;
     cursor: pointer;
     cursor: hand;
-}
+	}
+	
+.logow {
+        stroke: #646464;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 10px;
+      }
 
-	.st0 {
-    stroke:#000000;
-    opacity: 0.32;
-    fill: none;
-    stroke-width:1.75;
-    stroke-linecap:round;
-    stroke-linejoin:round;
-    stroke-miterlimit:10;
-    stroke-dasharray: 700;
-    stroke-dashoffset: 0;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-	.st1 {
-    fill:none;
-    opacity: 1;
-    stroke:#626774;
-    stroke-width:1.75;
-    stroke-linecap:round;
-    stroke-linejoin:round;
-    stroke-miterlimit:10;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-	.st2 {
-    stroke:#626774;
-    fill: none;
-    opacity: 0;
-    stroke-width:1.75;
-    stroke-linecap:round;
-    stroke-linejoin:round;
-    stroke-miterlimit:10;
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -ms-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    transition: all 2s ease;
-}
+.logoj {
+        stroke: #01a199;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 10px;
+      }
 
 .header {
   z-index: 99;
