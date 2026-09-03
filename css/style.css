@@ -206,11 +206,9 @@ table th {
 .logo {
     width: 50px;
     height: 50px;
-    margin-bottom: 25px;
     margin-top: 15px;
     float: left;
     z-index: 99;
-    cursor: pointer;
     cursor: hand;
 	}
 	
@@ -231,7 +229,7 @@ table th {
       }
 
 .header {
-  z-index: 99;
+  z-index: 98;
   background: #ffffff;
   background: linear-gradient(0deg,rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 1) 100%);
   left: 0;
@@ -888,6 +886,7 @@ input:focus, textarea:focus {
 
 .logofooter {
 	position: absolute;
+	width: 25px;
 	margin-left: 0px;
 	margin-top: 3px;
         float: left;
