@@ -208,6 +208,7 @@ table th {
     height: 50px;
     margin-top: 15px;
     float: left;
+    position: relative;
     z-index: 99;
     cursor: hand;
 	}
@@ -229,6 +230,7 @@ table th {
       }
 
 .header {
+  position: relative;
   z-index: 90;
   background: #ffffff;
   background: linear-gradient(0deg,rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 1) 100%);
