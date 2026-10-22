@@ -6,7 +6,7 @@ $(function(){
       if ($(window).scrollTop() > stickyHeaderTop) {
         header.css({position: 'fixed', top: '0px'});
       } else {
-        header.css({position: 'static', top: '0px'});
+        header.css({position: 'relative', top: '0px'});
       }
    });
 });
